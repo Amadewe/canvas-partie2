@@ -82,62 +82,115 @@ ctx.fillText('Ecole du Numérique', 420, 415);
 ctx.fillText('du Noyonnais', 420, 445);
 ctx.fill();
 
-//rectangle
+// Losange 1
 ctx.beginPath();
-ctx.fillStyle = "grey";
-ctx.fillRect(720,150,29,17);
-ctx.closePath();
-
-//triangle au dessus
-ctx.beginPath();
-ctx.fillStyle = "grey";
-ctx.moveTo(735,135);
+//sup gauche
+ctx.moveTo(700,150);
+// pointe haut
+ctx.lineTo(710,140);
+// sup droite
 ctx.lineTo(720,150);
-ctx.lineTo(750,150);
+// inf droite
+ctx.lineTo(720,160);
+// pointe bas
+ctx.lineTo(710,170);
+// inf gauche
+ctx.lineTo(700,160);
+ctx.fillStyle = '#ebebeb';
 ctx.fill();
 ctx.closePath();
 
-//triangle au dessous
+// 2eme logange
+// plus plus du 1er losange
 ctx.beginPath();
-ctx.fillStyle = "grey";
-ctx.moveTo(735,181);
-ctx.lineTo(720,167);
-ctx.lineTo(750,167);
+//sup gauche
+ctx.moveTo(720,170);
+// pointe haut
+ctx.lineTo(730,160);
+// sup droite
+ctx.lineTo(740,170);
+// inf droite
+ctx.lineTo(740,180);
+// pointe bas
+ctx.lineTo(730,190);
+// inf gauche
+ctx.lineTo(720,180);
+ctx.fillStyle = '#ebebeb';
 ctx.fill();
 ctx.closePath();
 
-//logange 1 ligne
+// 3eme losange
+//moins plus du 1er losange
 ctx.beginPath();
-//pointe
-ctx.moveTo(798,150);
-//coin sup droite
-ctx.lineTo(815,170);
-//coin inf droite
-ctx.lineTo(815,185);
-//pointe bas
-ctx.lineTo(798,200);
-//coin inf gauche
-ctx.lineTo(780,185);
-//coin sup gauche
-ctx.lineTo(780,170);
-ctx.fillStyle = 'grey';
+//sup gauche
+ctx.moveTo(680,170);
+// pointe haut
+ctx.lineTo(690,160);
+// sup droite
+ctx.lineTo(700,170);
+// inf droite
+ctx.lineTo(700,180);
+// pointe bas
+ctx.lineTo(690,190);
+// inf gauche
+ctx.lineTo(680,180);
+ctx.fillStyle = '#ebebeb';
 ctx.fill();
 ctx.closePath();
 
-//logange 2 ligne A FINIR 
+// 4eme Losange
+// plus plus du 3eme losange
 ctx.beginPath();
-//pointe
-ctx.moveTo(750,220);
-//coin sup droite
-ctx.lineTo(780,240);
-//coin inf droite
-ctx.lineTo(780,250);
-//pointe bas
-ctx.lineTo(750,300);
-//coin inf gauche
-ctx.lineTo(720,240);
-//coin sup gauche
-ctx.lineTo(720,250);
-ctx.fillStyle = 'grey';
+//sup gauche
+ctx.moveTo(700,190);
+// pointe haut
+ctx.lineTo(710,180);
+// sup droite
+ctx.lineTo(720,190);
+// inf droite
+ctx.lineTo(720,200);
+// pointe bas
+ctx.lineTo(710,210);
+// inf gauche
+ctx.lineTo(700,200);
+ctx.fillStyle = '#ebebeb';
+ctx.fill();
+ctx.closePath();
+
+//5eme Losange
+// plus plus du 4eme losange
+ctx.beginPath();
+//sup gauche
+ctx.moveTo(720,210);
+// pointe haut
+ctx.lineTo(730,200);
+// sup droite
+ctx.lineTo(740,210);
+// inf droite
+ctx.lineTo(740,220);
+// pointe bas
+ctx.lineTo(730,230);
+// inf gauche
+ctx.lineTo(720,220);
+ctx.fillStyle = '#ebebeb';
+ctx.fill();
+ctx.closePath();
+
+// 6eme losange
+//moins plus du 4eme losange
+ctx.beginPath();
+//sup gauche
+ctx.moveTo(680,210);
+// pointe haut
+ctx.lineTo(690,200);
+// sup droite
+ctx.lineTo(700,210);
+// inf droite
+ctx.lineTo(700,220);
+// pointe bas
+ctx.lineTo(690,230);
+// inf gauche
+ctx.lineTo(680,220);
+ctx.fillStyle = '#ebebeb';
 ctx.fill();
 ctx.closePath();

@@ -10,20 +10,20 @@ ctx.fill();
 
 // haut de la bouche
 ctx.beginPath();
-ctx.lineWidth='2';
-ctx.strokeStyle="red";
 ctx.moveTo(175,95); //mon point de départ, horizontal et vertical
 ctx.quadraticCurveTo(200,110,225,95);
+ctx.lineWidth='2';
+ctx.strokeStyle= '#f20b01';
 ctx.stroke();
 
 // bas de la bouche
 ctx.beginPath();
-ctx.lineWidth='2';
-ctx.strokeStyle= '#f20b01';
 ctx.moveTo(175,95); //mon point de départ, horizontal et vertical
 // Les premières permettent de définir deux points d'inflection (cp1x, cp1y) et (cp2x, cp2y)
 // pour changer de direction durant le tracé du même segment de courbe jusqu'au point de destination (destx, desty).
 ctx.quadraticCurveTo(200,130,225,95);
+ctx.lineWidth='2';
+ctx.strokeStyle= '#f20b01';
 ctx.stroke();
 
 // l'oeil gauche
@@ -44,18 +44,18 @@ ctx.fill();
 
 // sourcil gauche
 ctx.beginPath();
-ctx.lineWidth="1";
-ctx.strokeStyle= '#ffffff';
 ctx.moveTo(175, 62);
 ctx.quadraticCurveTo(185,53, 193,62);
+ctx.lineWidth= '1';
+ctx.strokeStyle= '#ffffff';
 ctx.stroke();
 
 // sourcil droit
 ctx.beginPath();
-ctx.lineWidth="1";
-ctx.strokeStyle= '#ffffff';
 ctx.moveTo(225, 62);
 ctx.quadraticCurveTo(215,53, 207,62);
+ctx.lineWidth= '1';
+ctx.strokeStyle= '#ffffff';
 ctx.stroke();
 
 // le corps
@@ -80,27 +80,27 @@ ctx.fill();
 ctx.beginPath();
 ctx.moveTo(90,135);
 ctx.lineTo(310,135);
-ctx.strokeStyle = '#976f0f';
 // lineCap pour arrondir les bords
-ctx.lineCap = "round";
+ctx.lineCap = 'round';
 // lineWidth pour la taille de la ligne
-ctx.lineWidth = 35;
+ctx.lineWidth = '35';
+ctx.strokeStyle = '#976f0f';
 ctx.stroke();
 
 // jambe gauche
 ctx.beginPath();
 ctx.moveTo(177,230);
 ctx.lineTo(177,290);
+ctx.lineCap = 'round';
+ctx.lineWidth = '35';
 ctx.strokeStyle = '#976f0f';
-ctx.lineCap = "round";
-ctx.lineWidth = 35;
 ctx.stroke();
 
 // jambe droite
 ctx.beginPath();
 ctx.moveTo(223,230);
 ctx.lineTo(223,290);
+ctx.lineCap = 'round';
+ctx.lineWidth = '35';
 ctx.strokeStyle = '#976f0f';
-ctx.lineCap = "round";
-ctx.lineWidth = 35;
 ctx.stroke();
